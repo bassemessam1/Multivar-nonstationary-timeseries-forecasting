@@ -96,7 +96,7 @@ def create_sequences(data, seq_len, pred_len, target_cols):
     return np.array(xs), np.array(ys)
 
 def preprocessing(dataset):
-    file_path = f'./{dataset}_df_2.csv'
+    file_path = f'.datasets/{dataset}_df_2.csv'
     if dataset == 'traffic':
         traffic_df = pd.read_csv(file_path)
         traffic_df = traffic_df[::10].reset_index(drop=True)
