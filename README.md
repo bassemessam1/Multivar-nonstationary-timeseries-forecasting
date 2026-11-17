@@ -42,10 +42,6 @@ source .venv/bin/activate       # Linux/macOS
 pip install -r requirements.txt
 ```
 
-```bash
-pip install scikit-learn
-```
-
 ## Data setup
 
 The application currently constructs dataset paths as `./datasets/{dataset}_df_2.csv`.
