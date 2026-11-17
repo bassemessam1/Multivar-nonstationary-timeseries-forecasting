@@ -42,15 +42,13 @@ source .venv/bin/activate       # Linux/macOS
 pip install -r requirements.txt
 ```
 
-`utils.py` imports `scikit-learn`, so install it separately if it is not already present in the environment:
-
 ```bash
 pip install scikit-learn
 ```
 
 ## Data setup
 
-The application currently constructs dataset paths as `./{dataset}_df_2.csv`. The committed files are stored in `datasets/`, so either update the path in `utils.py` to include `datasets/`, or place/copy the required files in the project root before running the application.
+The application currently constructs dataset paths as `./datasets/{dataset}_df_2.csv`.
 
 The supported dataset names and expected files are:
 
